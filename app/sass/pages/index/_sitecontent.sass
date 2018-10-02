@@ -1,0 +1,96 @@
+@import "slides/desk-slide"
+@import "slides/feedback-slide"
+@import "slides/works-slide"
+//done
+//in process
+//soon
+//canceled
+
+section.content-section
+  .content__side-right
+    margin-left: 5%
+    width: 25%
+    float: right
+    +max-screen(991px)
+      width: 100%
+      float: none
+      margin: 0 auto
+      margin-top: 40px
+    .content__side-part
+      background-color: #fff
+      margin-bottom: 40px
+      border-radius: 7px
+      +max-screen(991px)
+        display: inline-block
+        width: 45%
+        margin-left: 2.3%
+        vertical-align: top
+        margin-right: 2.3%
+      +max-screen(767px)
+        margin-left: 2.2%
+        margin-right: 2.2%
+      +max-screen(568px)
+        width: 60%
+        margin: 40px auto
+        display: block
+      +max-screen(450px)
+        width: 70%
+      +max-screen(395px)
+        width: 80%
+      +max-screen(347px)
+        width: 90%
+      +max-screen(277px)
+        width: 96%
+
+      .content__part-top
+        background-color: $grey
+        color: #fff
+        font-size: 19px
+        font-weight: 100
+        padding: 10px 15px
+        font-family: "Scada", sans-serif
+      ul
+        li
+          color: $grey
+          padding: 10px 15px
+          border-bottom: 1px solid $border
+          cursor: pointer
+          &:hover
+            border-left: 3px solid $orange
+          &.active
+            border-left: 3px solid $orange
+      &.content__side-questions
+        ul
+          li
+            &:hover
+              border-left: none
+            &.active
+              border-left: none
+            &.none-border
+              border: none
+        button
+          margin: 0 auto
+          display: block
+          margin-bottom: 10px
+  .content__side-left
+    float: left
+    width: 70%
+    +max-screen(991px)
+      width: 100%
+      float: none
+    .content__title
+      color: $title
+      font-size: 30px
+    .content__side-slide
+      background-color: #fff
+      margin-bottom: 40px
+      padding: 50px
+      +max-screen(767px)
+        text-align: center
+      +max-screen(575px)
+        width: 95%
+        margin-left: 2.5%
+      +max-screen(413px)
+        padding: 20px
+
+//Second slide

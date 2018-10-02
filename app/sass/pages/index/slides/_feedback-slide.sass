@@ -1,0 +1,55 @@
+section.content-section
+  .content__side-left
+    .content__side-slide
+      .slide__content
+        form
+          margin-top: 20px
+          input
+            width: 80%
+            padding: 20px 20px
+            border-radius: 60px
+            border: 1px solid $border
+            font-size: 14px
+            display: inline-block
+            vertical-align: middle
+            +max-screen(1199px)
+              width: 70%
+            +max-screen(767px)
+              width: 67%
+            +max-screen(520px)
+              width: 100%
+              margin-bottom: 20px
+              display: block
+            &:focus
+              outline: none
+          button
+            padding: 10px 20px
+            display: inline-block
+            vertical-align: middle
+            +max-screen(520px)
+              display: block
+              margin-left: 0
+              margin: 0 auto
+
+button.button-main
+  display: inline-block
+  vertical-align: middle
+  padding: 10px 20px
+  margin-left: 20px
+  border: 1px solid $orange
+  border-radius: 1px
+  font-size: 14px
+  background-color: $orange
+  color: #fff
+.slide__feedback::-webkit-input-placeholder
+	color: #bdbdbd
+	opacity: 1
+.slide__feedback::-moz-placeholder
+	color: #bdbdbd
+	opacity: 1
+.slide__feedback::-moz-placeholder
+	color: #bdbdbd
+	opacity: 1
+.slide__feedback::-ms-input-placeholder
+	color: #bdbdbd
+	opacity: 1

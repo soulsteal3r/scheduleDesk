@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9-A</title>
+	<link rel="shortcut icon" href="img/home-page/fav.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Основные стили css-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<!--Стили для шапки-->
+<style></style>
+<body id="body">
+	<nav>
+		<div class="container">
+			<div class="row">
+				<div class="nav__col-left">
+					<span>L</span>yceum <span>O</span>f <span>I</span>T
+				</div>
+				<div class="nav__col-right">
+					<ul>
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">Домашнее задание</a></li>
+						<li><a href="#">Личный Кабинет</a></li>
+					</ul>
+				</div>
+				<div class="nav__bubble">
+					<div class="nav__bubble-hamb" id="hambTrigger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="nav__bubble-bg" id="hambBg"></div>
+				<div class="nav__bubble-menu" id="hambMenu">
+					<ul>
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#">Расписание</a></li>
+						<li><a href="#">Домашнее задание</a></li>
+						<li><a href="#">Личный Кабинет</a></li>
+					</ul>
+				</div>
+				<div class="nav__hamb">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="content-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="content__side-left">
+					<div class="content__side-slide">
+						<h1 class="content__title content__title-today">Сегодняшние уроки</h1>
+						<div class="slide__top">
+							<div class="slide__col slide__col-left">
+								<div class="slide__col-widget">СЕГОДНЯ</div>
+							</div>
+							<div class="slide__col slide__col-center">
+								<div class="slide__trigger-left"></div>
+								<div class="slide__col-date">28/09</div>
+								<div class="slide__trigger-right"></div>
+							</div>
+							<div class="slide__col slide__col-right">
+								<div class="slide__col-calendar">
+									<span class="icon-calendar"></span>
+								</div>
+								<input type="date"/>
+								<div class="clearfix"></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="slide__content">
+							<div class="slide__content-row slide__content-row---template">
+								<div class="slide__col-content">
+									<div class="slide__col-title">
+										8:30
+									</div>
+								</div>
+								<div class="slide__col-content">
+									<div class="slide__col-title">
+										10:00
+									</div>
+								</div>
+								<div class="slide__col-content">
+									<div class="slide__col-title">
+										11:45
+									</div>
+								</div>
+								<div class="slide__col-content last">
+									<div class="slide__col-title">
+										13:20
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="slide__content-row">
+								<div class="slide__col-content done">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											Физика
+										</div>
+										<div class="slide__col-subtitle">
+											Самостоятельная работа.
+											Магнетизм
+										</div>
+									</div>
+									<div class="slide__col-time"><span>8:30</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content done">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											IT
+										</div>
+										<div class="slide__col-subtitle">
+											Самостоятельная работа. Работа с
+											ПО
+										</div>
+									</div>
+									<div class="slide__col-time"><span>10:00</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content in-process">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											История
+										</div>
+										<div class="slide__col-subtitle">
+											Устный опрос. Великая ФР
+										</div>
+									</div>
+									<div class="slide__col-time"><span>11:45</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content canceled last">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											Английский
+										</div>
+										<div class="slide__col-subtitle">
+											Отменен из-за отсутствия учителя
+										</div>
+									</div>
+									<div class="slide__col-time"><span>13:20</span></div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="slide__content-row">
+								<div class="slide__col-content done">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											IT
+										</div>
+										<div class="slide__col-subtitle">
+											Самостоятельная работа. Работа с ПО
+										</div>
+									</div>
+									<div class="slide__col-time"><span>8:30</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content done">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											Физика
+										</div>
+										<div class="slide__col-subtitle">
+											Самостоятельная работа. Магнетизм
+										</div>
+									</div>
+									<div class="slide__col-time"><span>10:00</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content in-process">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											История
+										</div>
+										<div class="slide__col-subtitle">
+											Устный опрос. Великая ФР
+										</div>
+									</div>
+									<div class="slide__col-time"><span>11:45</span></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="slide__col-content none last">
+									<div class="slide__col-text">
+										<div class="slide__col-title">
+											Геометрия
+										</div>
+										<div class="slide__col-subtitle">
+											Тематическая к/р по теме Ромб
+										</div>
+									</div>
+									<div class="slide__col-time"><span>13:20</span></div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="slide__help-row">
+								<div class="slide__help-col done">Проведен</div>
+								<div class="slide__help-col in-process">Сейчас</div>
+								<div class="slide__help-col soon">Скоро</div>
+								<div class="slide__help-col canceled">Отменен</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="content__side-slide">
+						<h1 class="content__title">Предложить новость</h1>
+						<div class="slide__content">
+							<form>
+								<input type="text" placeholder="Введите сообщение" class="slide__feedback">
+								<button class="button-main">Отправить</button>
+							</form>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="content__side-slide">
+						<h1 class="content__title">Ближайшие самостоятельные</h1>
+						<div class="slide__content">
+							<div class="scroll__row scroll__row-help">
+								<div class="scroll__col scroll__col-name">Предмет</div>
+								<div class="scroll__col scroll__col-theme">Тема</div>
+								<div class="scroll__col scroll__col-date">Дата</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="scroll__content">
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Физика</div></div>
+									<div class="scroll__col scroll__col-theme">Магнетизм</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Геометрия</div></div>
+									<div class="scroll__col scroll__col-theme">Ромб</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="scroll__row">
+									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
+									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-date">20.11</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+
+				<div class="content__side-right">
+					<div class="content__side-part">
+						<div class="content__part-top">
+							Свежая информация
+						</div>
+						<ul>
+							<li>География</li>
+							<li>Информатика IT</li>
+							<li>Программирование</li>
+							<li>Физика</li>
+							<li>Алгебра</li>
+						</ul>
+					</div>
+					<div class="content__side-part">
+						<div class="content__part-top">
+							Фото конспектов
+						</div>
+						<ul>
+							<li>География</li>
+							<li>Информатика IT</li>
+							<li>Программирование</li>
+							<li>Физика</li>
+							<li>Алгебра</li>
+						</ul>
+					</div>
+					<div class="content__side-part">
+						<div class="content__part-top">
+							Ваши предложения
+						</div>
+						<ul>
+							<li>Надо график дежурств</li>
+							<li>Потерял книгу по химии. Петров Сидор</li>
+							<li>В д/з по физике на 29.11 ошибка</li>
+							<li>Надо люди для проекта по химии. Петров Сидор</li>
+						</ul>
+					</div>
+						<div class="content__side-part content__side-questions">
+						<div class="content__part-top">
+							Опрос
+						</div>
+						<ul>
+							<li>Сколько времени вы проводите на сайте за день?</li>
+							<li>
+								<input type="radio" id="q1" name="questionResult"/>
+								<label for="q1">Не более минуты</label>
+							</li>
+							<li>
+								<input type="radio" id="q2" name="questionResult"/>
+								<label for="q2">От 2 до 5 минут</label>
+							</li>
+							<li>
+								<input type="radio" id="q3" name="questionResult"/>
+								<label for="q3">Не более 8 минут</label>
+							</li>
+							<li class="none-border">
+								<input type="radio" id="q4" name="questionResult"/>
+								<label for="q4">Могу долго находиться</label>
+							</li>
+						</ul>
+						<button class="button-main">Ответить</button>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				Copyright © 2018 by Alexey Sarakuz.
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

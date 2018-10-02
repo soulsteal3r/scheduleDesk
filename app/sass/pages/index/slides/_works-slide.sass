@@ -1,0 +1,45 @@
+section.content-section
+  .content__side-slide
+    .slide__content
+      margin-top: 40px
+      .scroll__content
+        height: 300px
+        overflow-y: scroll
+        padding-top: 0
+        border: 2px solid $border
+        position: relative
+      .scroll__row
+        border-bottom: 2px solid $border
+        &.scroll__row-help
+          background-color: $grey
+          color: #fff
+          border-bottom: none
+        .scroll__col
+          float: left
+          padding: 10px
+          +max-screen(500px)
+            padding: 8px 3px
+          &.scroll__col-name
+            width: 20%
+            +max-screen(768px)
+              width: 30%
+            +max-screen(600px)
+              font-size: 13px
+            +max-screen(500px)
+              width: 40%
+          &.scroll__col-theme
+            width: 60%
+            border-left: 2px solid $border
+            border-right: 2px solid $border
+            +max-screen(768px)
+              width: 40%
+            +max-screen(600px)
+              font-size: 13px
+          &.scroll__col-date
+            width: 20%
+            +max-screen(768px)
+              width: 30%
+            +max-screen(600px)
+              font-size: 13px
+            +max-screen(500px)
+              width: 20%

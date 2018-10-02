@@ -1,0 +1,265 @@
+section.content-section
+  .content__side-left
+    .content__title
+      &.content__title-today
+        +max-screen(453px)
+          margin: 0 20%
+          margin-top: 30px
+        +max-screen(400px)
+          font-size: 25px
+        +max-screen(330px)
+          margin: 0
+          margin-top: 60px
+
+section.content-section
+  .content__side-left
+    .content__side-slide
+      .slide__top
+        margin-top: 50px
+        .slide__col
+          width: 33.33%
+          float: left
+          +max-screen(767px)
+            float: none
+            margin: 0 auto
+          +max-screen(415px)
+            width: 50%
+          +max-screen(315px)
+            width: 100%
+          &.slide__col-left
+            float: left
+            text-align: center
+            +max-screen(767px)
+              float: none
+              margin: 0 auto
+            +max-screen(415px)
+              width: 50%
+            +max-screen(315px)
+              width: 100%
+            .slide__col-widget
+              +max-screen(767px)
+                width: 100%
+          &.slide__col-center
+            float: left
+            position: relative
+            color: $text
+            font-size: 22px
+            text-align: center
+            +max-screen(767px)
+              float: none
+              margin: 30px auto
+            +max-screen(415px)
+              width: 50%
+            +max-screen(315px)
+              width: 100%
+            .slide__trigger-left
+              position: absolute
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              width: 20px
+              height: 20px
+              &::before
+                content: "\e901"
+                position: absolute
+                left: 0
+                top: -2px
+            .slide__trigger-right
+              position: absolute
+              right: 0
+              top: 50%
+              transform: translateY(-50%)
+              width: 20px
+              height: 20px
+              &::after
+                content: "\e900"
+                position: absolute
+                right: 0
+                top: -2px
+          &.slide__col-right
+            +max-screen(767px)
+              float: none
+              width: 50%
+              margin: 0 auto
+            +max-screen(415px)
+              width: 50%
+            +max-screen(315px)
+              width: 100%
+            input
+              float: right
+              border: 1px solid darken($border, 9%)
+              line-height: 34px
+              padding-left: 10px
+              padding-right: 2px
+              font-size: 13px
+              max-width: 145px
+              +max-screen(767px)
+                width: 100%
+                max-width: none
+                float: none
+            .slide__col-calendar
+              float: right
+              background-color: $border
+              padding: 10px 10px
+              font-weight: 900
+              font-family: 'Open Sans', sans-serif
+              border: 1px solid darken($border, 9%)
+              line-height: 14px
+              +max-screen(767px)
+                display: none
+          .slide__col-widget
+            background-color: $border
+            display: inline-block
+            padding: 10px 20px
+            font-family: 'Open Sans', sans-serif
+            border: 1px solid darken($border, 9%)
+          .slide__col-date
+            line-height: 38px
+            text-align: center
+            font-family: 'PT Sans Caption', sans-serif
+
+section.content-section
+  .content__side-left
+    .content__side-slide
+      .slide__content
+        padding-top: 10px
+        .slide__content-row
+          +max-screen(767px)
+            border-bottom: 3px solid $border
+            padding-bottom: 30px
+          &.slide__content-row---template
+            +max-screen(767px)
+              display: none
+            .slide__col-title
+              padding: 8px 5px
+          .slide__col-content
+            &.last
+              margin-left: 0%
+              margin-right: 0
+              +max-screen(453px)
+                display: block
+                width: 80%
+                margin: 20px auto
+        .slide__col-content
+          display: inline-block
+          line-height: 1.3
+          width: 23%
+          margin-top: 30px
+          margin-right: 2%
+          position: relative
+          background-color: $border
+          color: $grey
+          text-align: center
+          box-sizing: border-box
+          border: 1px solid $border
+          vertical-align: top
+          .slide__col-text
+            padding: 10px 5px
+            .slide__col-subtitle
+              font-size: 13px
+              +max-screen(1199px)
+                font-size: 11px
+          +max-screen(1199px)
+            margin-right: 1.85%
+          +max-screen(767px)
+            width: 48%
+            margin-right: 1.4%
+          +max-screen(511px)
+            margin-right: 1.3%
+          +max-screen(453px)
+            display: block
+            width: 80%
+            margin: 20px auto
+          &.done
+            background-color: #DCEFD0
+            border-color: #DCEFD0
+            .slide__col-title
+              color: #555555
+              text-transform: uppercase
+              font-weight: 700
+              font-family: "Open Sans", serif
+          &.in-process
+            background-color: #fff
+            border: 1px dashed black
+            .slide__col-title
+              color: #555555
+              text-transform: uppercase
+              font-weight: 700
+              font-family: "Open Sans", serif
+          &.soon
+            background-color: #E7F0EF
+            border: 1px solid #E7F0EF
+            .slide__col-title
+              color: #555555
+              text-transform: uppercase
+              font-weight: 700
+              font-family: "Open Sans", serif
+          &.canceled
+            background-color: #F2D5D5
+            border: 1px solid #F2D5D5
+            .slide__col-title
+              color: #555555
+              text-transform: uppercase
+              font-weight: 700
+              font-family: "Open Sans", serif
+          &.none
+            .slide__col-title
+              color: #555555
+              text-transform: uppercase
+              font-weight: 700
+              font-family: "Open Sans", serif
+          .slide__col-time
+            display: none
+            +max-screen(453px)
+              display: block
+              background-color: $border
+              float: right
+              width: 30%
+              position: absolute
+              right: 0
+              top: 0
+              height: 100%
+            +max-screen(300px)
+              display: none
+            span
+              +max-screen(453px)
+                position: absolute
+                top: 50%
+                transform: translateY(-50%) translateX(-50%)
+                width: 100%
+                left: 50%
+          .slide__col-text
+            +max-screen(453px)
+              float: left
+              width: 70%
+            +max-screen(300px)
+              width: 100%
+              float: none
+section.content-section
+  .content__side-left
+    .content__side-slide
+      .slide__content
+        .slide__help-row
+          text-align: center
+          margin-top: 30px
+          .slide__help-col
+            display: inline-block
+            padding: 6px 15px
+            margin: 0 6px
+            font-family: "Open Sans", serif
+            +max-screen(568px)
+              width: 132px
+              margin-top: 10px
+              margin-bottom: 10px
+            &.done
+              background-color: #DCEFD0
+              border-color: #DCEFD0
+            &.in-process
+              background-color: #fff
+              border: 1px dashed black
+            &.soon
+              background-color: #E7F0EF
+              border: 1px solid #E7F0EF
+            &.canceled
+              background-color: #F2D5D5
+              border: 1px solid #F2D5D5
