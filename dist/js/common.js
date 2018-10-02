@@ -1,16 +1,17 @@
-var Hambtrigger = document.getElementById("hambTrigger");
-var bg = document.getElementById("hambBg");
+var bubbleTrigger = document.getElementById("bubbleTrigger");
+var bubblebg = document.getElementById("bubbleBg");
+var bubblemenu = document.getElementById("bubbleMenu");
 var body = document.getElementById("body");
-var menu = document.getElementById("hambMenu");
-Hambtrigger.onclick = function(){
-  if(bg.classList.contains("active")){
-    bg.style.transition = ".6s";
+
+bubbleTrigger.onclick = function(){
+  if(bubblebg.classList.contains("active")){
+    bubblebg.style.transition = ".6s";
   }else{
-    bg.style.transition = "1s";
+    bubblebg.style.transition = "1s";
   }
-  bg.classList.toggle("active");
+  bubblebg.classList.toggle("active");
   body.classList.toggle("ovh");
   setTimeout(function(){
-    menu.classList.toggle("active");
+    bubblemenu.classList.toggle("active");
   }, 200);
 }

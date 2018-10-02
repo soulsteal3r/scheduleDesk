@@ -32,13 +32,10 @@ section.content-section
             +max-screen(767px)
               float: none
               margin: 0 auto
-            +max-screen(415px)
-              width: 50%
-            +max-screen(315px)
               width: 100%
             .slide__col-widget
               +max-screen(767px)
-                width: 100%
+                float: none
           &.slide__col-center
             float: left
             position: relative
@@ -109,10 +106,11 @@ section.content-section
                 display: none
           .slide__col-widget
             background-color: $border
-            display: inline-block
+            float: left
             padding: 10px 20px
             font-family: 'Open Sans', sans-serif
             border: 1px solid darken($border, 9%)
+            font-size: 14px
           .slide__col-date
             line-height: 38px
             text-align: center

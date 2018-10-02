@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>9-A</title>
+	<title>Главная</title>
 	<link rel="shortcut icon" href="img/home-page/fav.png" type="image/png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Основные стили css-->
@@ -21,31 +21,43 @@
 				<div class="nav__col-right">
 					<ul>
 						<li class="active"><a href="#">Главная</a></li>
-						<li><a href="#">Расписание</a></li>
+						<li><a href="pages/schedule.html">Расписание</a></li>
 						<li><a href="#">Домашнее задание</a></li>
-						<li><a href="#">Личный Кабинет</a></li>
+						<li><a href="pages/log-in.html">Личный Кабинет</a></li>
 					</ul>
 				</div>
-				<div class="nav__bubble">
-					<div class="nav__bubble-hamb" id="hambTrigger">
-						<div></div>
-						<div></div>
-						<div></div>
+
+				<div class="nav__bubble-container">
+					<div class="nav__bubble">
+						<div class="nav__bubble-hamb" id="bubbleTrigger">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div class="nav__bubble-bg" id="bubbleBg"></div>
+					<div class="nav__bubble-menu" id="bubbleMenu">
+						<ul>
+							<li class="active"><a href="#">Главная</a></li>
+							<li><a href="#">Расписание</a></li>
+							<li><a href="#">Домашнее задание</a></li>
+							<li><a href="#">Личный Кабинет</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="nav__bubble-bg" id="hambBg"></div>
-				<div class="nav__bubble-menu" id="hambMenu">
+				<div class="nav__hamb" id="hambTrigger">
+					<div></div>
+					<div class="nav__hamb-center"></div>
+					<div></div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="nav__hamb-menu" id="hambMenu">
 					<ul>
 						<li class="active"><a href="#">Главная</a></li>
 						<li><a href="#">Расписание</a></li>
 						<li><a href="#">Домашнее задание</a></li>
 						<li><a href="#">Личный Кабинет</a></li>
 					</ul>
-				</div>
-				<div class="nav__hamb">
-					<div></div>
-					<div></div>
-					<div></div>
 				</div>
 			</div>
 		</div>
@@ -61,7 +73,8 @@
 						<h1 class="content__title content__title-today">Сегодняшние уроки</h1>
 						<div class="slide__top">
 							<div class="slide__col slide__col-left">
-								<div class="slide__col-widget">СЕГОДНЯ</div>
+								<button class="slide__col-widget">СЕГОДНЯ</button>
+								<div class="clearfix"></div>
 							</div>
 							<div class="slide__col slide__col-center">
 								<div class="slide__trigger-left"></div>
@@ -247,55 +260,55 @@
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
 								<div class="scroll__row">
 									<div class="scroll__col scroll__col-name"><div>Украинский</div></div>
-									<div class="scroll__col scroll__col-theme">Чергування</div>
+									<div class="scroll__col scroll__col-theme">Відмінювання</div>
 									<div class="scroll__col scroll__col-date">20.11</div>
 									<div class="clearfix"></div>
 								</div>
@@ -382,8 +395,6 @@
 		</div>
 	</footer>
 
-
-	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

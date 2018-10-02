@@ -51,6 +51,14 @@ nav
     height: 2px
     background-color: #fff
     margin: 5px 0
+.nav__hamb-menu
+  display: none
+  &.active
+    +max-screen(991px)
+      display: block
+      width: 100%
+    +max-screen(575px)
+      display: none
 
 //Bubble menu
 .nav__bubble
