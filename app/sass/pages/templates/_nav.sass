@@ -35,6 +35,7 @@ nav
           background-color: rgba(255, 255, 255, .06)
         &:hover
           background-color: rgba(255, 255, 255, .06)
+
 //Hamburger menu
 .nav__hamb
   display: none
@@ -51,6 +52,48 @@ nav
     height: 2px
     background-color: #fff
     margin: 5px 0
+    &.nav__hamb--top
+      transition: .3s
+    &.nav__hamb--bottom
+      transition: .3s
+    &.nav__hamb--center
+      position: relative
+      transition: 3s
+      &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #fff
+        transition: .4s
+      &::after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        width: 100%
+        height: 100%
+        background-color: #fff
+        transition: .4s
+  &.active
+    div
+      &.nav__hamb--center
+        transition: 0s
+        position: relative
+        background-color: transparent
+        &::before
+          transform: rotate(45deg)
+        &::after
+          transform: rotate(-45deg)
+      &.nav__hamb--top
+        opacity: 0
+        transform: translateX(-30px)
+      &.nav__hamb--bottom
+        opacity: 0
+        transform: translateX(30px)
+
 .nav__hamb-menu
   display: none
   &.active
@@ -59,6 +102,29 @@ nav
       width: 100%
     +max-screen(575px)
       display: none
+    ul
+      text-align: center
+      position: absolute
+      background-color: $grey
+      width: 100%
+      left: 0
+      li
+        display: inline-block
+        line-height: 58px
+        padding: 0 15px
+        cursor: pointer
+        transition: .3s
+        font-size: 14px
+        +max-screen(750px)
+          padding: 0 8px
+          line-height: 48px
+          margin-bottom: 10px
+        a
+          color: #fff
+        &.active
+          background-color: rgba(255, 255, 255, .06)
+        &:hover
+          background-color: rgba(255, 255, 255, .06)
 
 //Bubble menu
 .nav__bubble
@@ -85,6 +151,48 @@ nav
       height: 2px
       background-color: #fff
       margin: 5px 0
+      &.nav__bubble-hamb--top
+        transition: .3s
+      &.nav__bubble-hamb--bottom
+        transition: .3s
+      &.nav__bubble-hamb--center
+        position: relative
+        transition: 3s
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-color: #fff
+          transition: .4s
+        &::after
+          content: ""
+          position: absolute
+          top: 0
+          right: 0
+          width: 100%
+          height: 100%
+          background-color: #fff
+          transition: .4s
+    &.active
+      div
+        &.nav__bubble-hamb--center
+          transition: 0s
+          position: relative
+          background-color: transparent
+          &::before
+            transform: rotate(45deg)
+          &::after
+            transform: rotate(-45deg)
+        &.nav__bubble-hamb--top
+          opacity: 0
+          transform: translateX(-30px)
+        &.nav__bubble-hamb--bottom
+          opacity: 0
+          transform: translateX(30px)
+
 .nav__bubble-bg
   display: none
   +max-screen(575px)
