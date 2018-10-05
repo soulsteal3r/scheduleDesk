@@ -1817,6 +1817,12 @@ section.content-section .content__side-left .content__side-slide .slide__top {
 
 section.content-section .content__side-left .content__side-slide .slide__content {
   padding-top: 10px; }
+  section.content-section .content__side-left .content__side-slide .slide__content .slide__content-row .slide__content-group {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #eee;
+    text-align: center;
+    padding: 8px 0; }
   @media only screen and (max-width: 767px) {
     section.content-section .content__side-left .content__side-slide .slide__content .slide__content-row {
       border-bottom: 3px solid #eee;
