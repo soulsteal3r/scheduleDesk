@@ -26,11 +26,13 @@ nav
         float: left
         line-height: 68px
         margin-left: 20px
-        padding: 0 15px
         cursor: pointer
         transition: .3s
         a
           color: #fff
+          cursor: pointer
+          display: block
+          padding: 0 15px
         &.active
           background-color: rgba(255, 255, 255, .06)
         &:hover
@@ -111,16 +113,19 @@ nav
       li
         display: inline-block
         line-height: 58px
-        padding: 0 15px
         cursor: pointer
         transition: .3s
         font-size: 14px
         +max-screen(750px)
-          padding: 0 8px
           line-height: 48px
           margin-bottom: 10px
         a
           color: #fff
+          display: block
+          cursor: pointer
+          padding: 0 15px
+          +max-screen(750px)
+            padding: 0 8px
         &.active
           background-color: rgba(255, 255, 255, .06)
         &:hover
@@ -229,3 +234,28 @@ nav
     a
       color: #FFF
       line-height: 80px
+
+section .content__logo
+  display: none
+  background-color: #fff
+  +max-screen(575px)
+    display: block
+    text-align: center
+    color: white
+    font-size: 34px
+    line-height: 42px
+    padding: 13px 0
+    color: $grey
+    margin-bottom: 10px
+  +max-screen(459px)
+    width: 70%
+    margin: 0 auto
+  +max-screen(417px)
+    margin-top: 30px
+  +max-screen(360px)
+    width: 85%
+  +max-screen(330px)
+    margin-bottom: 0
+  span
+    +max-screen(575px)
+      color: $orange

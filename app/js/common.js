@@ -27,3 +27,27 @@ hambTrigger.onclick = function(){
   hambTrigger.classList.toggle("active");
   hambMenu.classList.toggle("active");
 }
+
+//Schedule page (tabs)
+
+var tabs = document.getElementsByClassName("slide__top--tab");
+
+var tabWrapper = document.getElementsByClassName("slide__content--tabWrapper");
+
+for(var j=0; j<tabs.length; j++){
+  (function(j){
+    tabs[j].onclick = function(){
+      for(var q=0; q<tabs.length; q++){
+        if(!tabs[j].classList.contains("active-tab") || j!=q){
+          tabs[q].classList.remove("active-tab");
+          tabWrapper[q].classList.remove("active-tabWrapper");
+        }
+      }
+      if(!tabs[j].classList.contains("active-tab")){
+        tabs[j].classList.add("active-tab");
+        tabWrapper[j].classList.add("active-tabWrapper");
+      }
+
+    }
+  })(j);
+}
