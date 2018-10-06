@@ -2202,8 +2202,7 @@ section.login-section {
     background-color: #fff;
     padding: 25px;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 360px; }
+    overflow: hidden; }
     @media only screen and (max-width: 991px) {
       section.login-section .login__block {
         width: 700px; } }
@@ -2326,6 +2325,8 @@ section.content-section .content__side-right {
     @media only screen and (max-width: 277px) {
       section.content-section .content__side-right .content__side-part {
         width: 96%; } }
+    section.content-section .content__side-right .content__side-part .content__side--photos {
+      width: 100%; }
     section.content-section .content__side-right .content__side-part .content__part-top {
       background-color: #2E3641;
       color: #fff;
