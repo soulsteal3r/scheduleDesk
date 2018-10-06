@@ -1374,6 +1374,8 @@ nav {
     @media only screen and (max-width: 575px) {
       nav .nav__col-left {
         display: none; } }
+    nav .nav__col-left a {
+      color: #fff; }
     nav .nav__col-left span {
       color: #F69087; }
   nav .nav__col-right {
@@ -1488,6 +1490,7 @@ nav {
   .nav__hamb-menu.active ul {
     text-align: center;
     position: absolute;
+    z-index: 50;
     background-color: #2E3641;
     width: 100%;
     left: 0; }
@@ -1530,7 +1533,7 @@ nav {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       background-color: #2E3641;
-      z-index: 4; } }
+      z-index: 30; } }
   .nav__bubble .nav__bubble-hamb {
     position: absolute;
     left: 50px;
@@ -1615,7 +1618,7 @@ nav {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       background-color: #2E3641;
-      z-index: 3;
+      z-index: 29;
       -webkit-transition: 1s;
       -o-transition: 1s;
       transition: 1s; } }
@@ -1632,7 +1635,7 @@ nav {
     .nav__bubble-menu.active {
       display: block;
       position: fixed;
-      z-index: 6;
+      z-index: 40;
       width: 100%;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -1783,10 +1786,11 @@ section.content-section .content__side-left .content__side-slide .slide__top {
       padding-left: 10px;
       padding-right: 2px;
       font-size: 13px;
-      max-width: 145px; }
+      max-width: 145px;
+      min-height: 38px; }
       @media only screen and (max-width: 1199px) {
         section.content-section .content__side-left .content__side-slide .slide__top .slide__col.slide__col-right input {
-          max-width: 115px; } }
+          font-size: 12px; } }
       @media only screen and (max-width: 767px) {
         section.content-section .content__side-left .content__side-slide .slide__top .slide__col.slide__col-right input {
           width: 100%;
@@ -1800,7 +1804,7 @@ section.content-section .content__side-left .content__side-slide .slide__top {
       font-family: 'Open Sans', sans-serif;
       border: 1px solid #d7d7d7;
       line-height: 14px; }
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 1199px) {
         section.content-section .content__side-left .content__side-slide .slide__top .slide__col.slide__col-right .slide__col-calendar {
           display: none; } }
     section.content-section .content__side-left .content__side-slide .slide__top .slide__col .slide__col-widget {
@@ -2102,7 +2106,12 @@ section.content-section .content__side-left .content__side-slide.content__side-s
       width: 20%;
       padding: 20px 0;
       cursor: pointer;
-      font-size: 16px; }
+      font-size: 16px;
+      position: relative;
+      overflow: hidden; }
+      section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li span {
+        position: relative;
+        z-index: 5; }
       @media only screen and (max-width: 767px) {
         section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li {
           font-size: 13px; } }
@@ -2111,9 +2120,35 @@ section.content-section .content__side-left .content__side-slide.content__side-s
           float: none;
           text-align: center;
           width: auto;
-          font-size: 16px; } }
-      section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li.active-tab {
-        background-color: #fff; }
+          font-size: 16px;
+          margin: 0 auto;
+          margin-top: 7px;
+          margin-bottom: 7px; } }
+      @media only screen and (max-width: 459px) {
+        section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li {
+          width: 70%; } }
+      @media only screen and (max-width: 360px) {
+        section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li {
+          width: 85%; } }
+      section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        opacity: .5;
+        -webkit-transition: top .3s;
+        -o-transition: top .3s;
+        transition: top .3s; }
+      section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li.active-tab::after {
+        background-color: #fff;
+        top: 0;
+        opacity: 1; }
+      @media only screen and (min-width: 575px) {
+        section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__top ul li:hover::after {
+          background-color: #fff; } }
   section.content-section .content__side-left .content__side-slide.content__side-slide--tabs .slide__content {
     background-color: #fff;
     padding: 30px;
@@ -2158,6 +2193,95 @@ section.content-section .content__side-left .content__side-slide.content__side-s
 @media only screen and (max-width: 440px) {
   section.content-section .content__logo {
     font-size: 24px; } }
+
+section.login-section {
+  margin-bottom: 40px; }
+  section.login-section .login__block {
+    width: 782px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 360px; }
+    @media only screen and (max-width: 991px) {
+      section.login-section .login__block {
+        width: 700px; } }
+    @media only screen and (max-width: 767px) {
+      section.login-section .login__block {
+        width: 500px;
+        padding-bottom: 50px; } }
+    @media only screen and (max-width: 575px) {
+      section.login-section .login__block {
+        width: 100%; } }
+    @media only screen and (max-width: 459px) {
+      section.login-section .login__block {
+        margin-top: 30px; } }
+    section.login-section .login__block::after {
+      content: "";
+      position: absolute;
+      top: -90%;
+      right: -45%;
+      width: 100%;
+      height: 200%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #2E3641; }
+      @media only screen and (max-width: 767px) {
+        section.login-section .login__block::after {
+          bottom: -700px;
+          top: auto;
+          height: 900px;
+          width: 900px;
+          left: -200px; } }
+    section.login-section .login__block .login__part-left {
+      width: 40%;
+      float: left; }
+      @media only screen and (max-width: 767px) {
+        section.login-section .login__block .login__part-left {
+          width: 100%; } }
+      section.login-section .login__block .login__part-left h1 {
+        color: #333;
+        font-size: 30px;
+        margin-bottom: 40px;
+        font-family: "Scada", sans-serif; }
+      section.login-section .login__block .login__part-left form label {
+        color: #333;
+        font-family: "Scada", sans-serif; }
+      section.login-section .login__block .login__part-left form input {
+        font-size: 14px;
+        padding: 10px 5px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #525252; }
+      section.login-section .login__block .login__part-left form button {
+        margin-left: 0;
+        padding: 10px 30px;
+        -webkit-border-radius: 20px;
+                border-radius: 20px; }
+    section.login-section .login__block .login__part-right {
+      float: right;
+      width: 40%;
+      position: relative;
+      z-index: 7;
+      color: #fff;
+      margin-top: 40px;
+      font-family: "Scada", sans-serif; }
+      @media only screen and (max-width: 767px) {
+        section.login-section .login__block .login__part-right {
+          width: 100%;
+          margin-top: 100px;
+          text-align: center; } }
+      @media only screen and (max-width: 516px) {
+        section.login-section .login__block .login__part-right {
+          text-align: right; } }
+      section.login-section .login__block .login__part-right h2 {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 10px; }
+      section.login-section .login__block .login__part-right p {
+        line-height: 1.3; }
 
 section.content-section .content__side-right {
   margin-left: 5%;

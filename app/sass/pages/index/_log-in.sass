@@ -1,0 +1,80 @@
+section.login-section
+  margin-bottom: 40px
+  .login__block
+    width: 782px
+    margin: 0 auto
+    background-color: #fff
+    padding: 25px
+    position: relative
+    overflow: hidden
+    margin-bottom: 360px
+    +max-screen(991px)
+      width: 700px
+    +max-screen(767px)
+      width: 500px
+      padding-bottom: 50px
+    +max-screen(575px)
+      width: 100%
+    +max-screen(459px)
+      margin-top: 30px
+    &::after
+      content: ""
+      position: absolute
+      top: -90%
+      right: -45%
+      width: 100%
+      height: 200%
+      border-radius: 50%
+      background-color: $grey
+      +max-screen(767px)
+        bottom: -700px
+        top: auto
+        height: 900px
+        width: 900px
+        left: -200px
+
+    .login__part-left
+      width: 40%
+      float: left
+      +max-screen(767px)
+        width: 100%
+      h1
+        color: $title
+        font-size: 30px
+        margin-bottom: 40px
+        font-family: "Scada", sans-serif
+      form
+        label
+          color: $title
+          font-family: "Scada", sans-serif
+        input
+          font-size: 14px
+          padding: 10px 5px
+          width: 100%
+          margin-top: 10px
+          margin-bottom: 20px
+          color: $text
+        button
+          margin-left: 0
+          padding: 10px 30px
+          border-radius: 20px
+    .login__part-right
+      float: right
+      width: 40%
+      position: relative
+      z-index: 7
+      color: #fff
+      margin-top: 40px
+      font-family: "Scada", sans-serif
+      +max-screen(767px)
+        width: 100%
+        margin-top: 100px
+        text-align: center
+      +max-screen(516px)
+        text-align: right
+      h2
+        font-size: 25px
+        color: #fff
+        margin-bottom: 10px
+      p
+        line-height: 1.3
