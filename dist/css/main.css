@@ -1388,9 +1388,9 @@ nav {
       line-height: 68px;
       margin-left: 20px;
       cursor: pointer;
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s; }
+      -webkit-transition: background-color .3s;
+      -o-transition: background-color .3s;
+      transition: background-color .3s; }
       nav .nav__col-right ul li a {
         color: #fff;
         cursor: pointer;
@@ -2216,6 +2216,12 @@ section.login-section {
     @media only screen and (max-width: 459px) {
       section.login-section .login__block {
         margin-top: 30px; } }
+    @media only screen and (max-width: 355px) {
+      section.login-section .login__block {
+        padding-bottom: 20px; } }
+    @media only screen and (max-width: 330px) {
+      section.login-section .login__block {
+        padding-bottom: 10px; } }
     section.login-section .login__block::after {
       content: "";
       position: absolute;
@@ -2233,6 +2239,9 @@ section.login-section {
           height: 900px;
           width: 900px;
           left: -200px; } }
+      @media only screen and (max-width: 330px) {
+        section.login-section .login__block::after {
+          bottom: -680px; } }
     section.login-section .login__block .login__part-left {
       width: 40%;
       float: left; }
@@ -2272,7 +2281,7 @@ section.login-section {
           width: 100%;
           margin-top: 100px;
           text-align: center; } }
-      @media only screen and (max-width: 516px) {
+      @media only screen and (max-width: 490px) {
         section.login-section .login__block .login__part-right {
           text-align: right; } }
       section.login-section .login__block .login__part-right h2 {
@@ -2281,6 +2290,69 @@ section.login-section {
         margin-bottom: 10px; }
       section.login-section .login__block .login__part-right p {
         line-height: 1.3; }
+
+section.login-section .login__block-q {
+  width: 782px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  position: relative;
+  margin-top: 40px; }
+  @media only screen and (max-width: 991px) {
+    section.login-section .login__block-q {
+      width: 700px; } }
+  @media only screen and (max-width: 767px) {
+    section.login-section .login__block-q {
+      width: 500px; } }
+  @media only screen and (max-width: 575px) {
+    section.login-section .login__block-q {
+      width: 100%; } }
+  @media only screen and (max-width: 459px) {
+    section.login-section .login__block-q {
+      margin-top: 30px; } }
+  section.login-section .login__block-q.active span.icon-keyboard_arrow_right {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg); }
+  section.login-section .login__block-q h2 {
+    font-size: 24px;
+    line-height: 30px;
+    float: left; }
+    @media only screen and (max-width: 767px) {
+      section.login-section .login__block-q h2 {
+        width: 100%; } }
+  section.login-section .login__block-q span.icon-keyboard_arrow_right {
+    float: right;
+    font-size: 30px;
+    line-height: 30px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+  section.login-section .login__block-q .login__block-content {
+    display: none; }
+    section.login-section .login__block-q .login__block-content.active {
+      display: block; }
+      section.login-section .login__block-q .login__block-content.active h3 {
+        margin-top: 25px;
+        font-weight: 100;
+        font-family: "Open Sans", serif;
+        font-weight: 100;
+        color: #333; }
+      section.login-section .login__block-q .login__block-content.active ul {
+        margin-top: 25px; }
+        section.login-section .login__block-q .login__block-content.active ul li {
+          margin-left: 20px;
+          line-height: 1.9;
+          color: #333; }
+          section.login-section .login__block-q .login__block-content.active ul li b {
+            font-weight: 900;
+            font-size: 17px;
+            color: black; }
+          section.login-section .login__block-q .login__block-content.active ul li:before {
+            content: "- "; }
 
 section.content-section .content__side-right {
   margin-left: 5%;
