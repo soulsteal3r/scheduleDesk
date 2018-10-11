@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание</title>
+    <link rel="shortcut icon" href="../img/home-page/fav.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Основные стили css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body id="body">
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="nav__col-left">
+                <a href="../"><span>L</span>yceum <span>O</span>f <span>I</span>T</a>
+            </div>
+            <div class="nav__col-right">
+                <ul>
+                    <li><a href="../">Главная</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li class="active"><a href="#">Домашнее задание</a></li>
+                    <li><a href="log-in.html">Личный Кабинет</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__bubble-container">
+                <div class="nav__bubble">
+                    <div class="nav__bubble-hamb" id="bubbleTrigger">
+                        <div class="nav__bubble-hamb--top"></div>
+                        <div class="nav__bubble-hamb--center"></div>
+                        <div class="nav__bubble-hamb--bottom"></div>
+                    </div>
+                </div>
+                <div class="nav__bubble-bg" id="bubbleBg"></div>
+                <div class="nav__bubble-menu" id="bubbleMenu">
+                    <ul>
+                        <li><a href="../">Главная</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li class="active"><a href="#">Домашнее задание</a></li>
+                        <li><a href="log-in.html">Личный Кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav__hamb" id="hambTrigger">
+                <div class="nav__hamb--top"></div>
+                <div class="nav__hamb--center"></div>
+                <div class="nav__hamb--bottom"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="nav__hamb-menu" id="hambMenu">
+                <ul>
+                    <li><a href="../">Главная</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li class="active"><a href="#">Домашнее задание</a></li>
+                    <li><a href="log-in.html">Личный Кабинет</a></li>
+                    <li class="clearfix"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="content__logo">
+                <span>L</span>yceum <span>O</span>f <span>I</span>T 9-A
+            </div>
+            <div class="content__side-left">
+                <div class="content__side-slide content__side-slide--tabs content__side-slide--groups">
+                    <div class="slide__top">
+                        <ul>
+                            <li class="slide__top--tab active-tab"><span>I - группа</span></li>
+                            <li class="slide__top--tab"><span>II - группа</span></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                    <div class="slide__content">
+                        <h1 class="content__title content__title--tabs">Домашнее задание заданное на: </h1>
+                        <div class="slide__content--tabWrapper active-tabWrapper">
+                            <div class="slide__top">
+                                <div class="slide__col slide__col-left">
+                                    <button class="slide__col-widget">СЕГОДНЯ</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="slide__col slide__col-center">
+                                    <div class="slide__trigger-left"></div>
+                                    <div class="slide__col-date">28/09</div>
+                                    <div class="slide__trigger-right"></div>
+                                </div>
+                                <div class="slide__col slide__col-right">
+                                    <div class="slide__col-calendar">
+                                        <span class="icon-calendar"></span>
+                                    </div>
+                                    <input type="date" value="2018-09-28" min="2018-09-03" max="2019-05-31"/>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Физика
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Самостоятельная работа.
+                                        Магнетизм
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        §3-8, Конспект, задачи (Ненашев, желтый) 5.27, 6.24, 7.12, 7.13, 7,14, 7.15;
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        §3-8, Конспект, задачи (Ненашев, желтый) 5.26, 5.27, 6.10, 6.12, 6,13, 7.1;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Програм.
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Контрольная. Циклы for, while. Random num
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Подготовка к К/Р, тема: "Циклы for и while. Ветвление: if, else"
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Решение задач. Сборник на почте. №3.2, №3.3, №3.4, №3.5;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        История Укр.
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Опрос(устный). Лекция №1, §1-3
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        История Украины; Лекция №1, §1-3, Вопросы с. 114;
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Презентация 3, опрос по лекции №1, §1-3; Конспект на сайте;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col last">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Агнгл. язык
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Замена, рассказывали диалог. S.B. 6D-6E
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        6E; S.B.p. 56; W.B.p. 48; Составить диалог, записать в challenge
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        6E; S.b. p. 56-57; Составили и рассказали диалог,
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide__content--tabWrapper">
+                            <div class="slide__top">
+                                <div class="slide__col slide__col-left">
+                                    <button class="slide__col-widget">СЕГОДНЯ</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="slide__col slide__col-center">
+                                    <div class="slide__trigger-left"></div>
+                                    <div class="slide__col-date">28/09</div>
+                                    <div class="slide__trigger-right"></div>
+                                </div>
+                                <div class="slide__col slide__col-right">
+                                    <div class="slide__col-calendar">
+                                        <span class="icon-calendar"></span>
+                                    </div>
+                                    <input type="date" value="2018-09-28" min="2018-09-03" max="2019-05-31"/>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Програм.
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Контрольная. Циклы for, while. Random num
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Подготовка к К/Р, тема: "Циклы for и while. Ветвление: if, else"
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Решение задач. Сборник на почте. №3.2, №3.3, №3.4, №3.5;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Физика
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Самостоятельная работа.
+                                        Магнетизм
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        §3-8, Конспект, задачи (Ненашев, желтый) 5.27, 6.24, 7.12, 7.13, 7,14, 7.15;
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        §3-8, Конспект, задачи (Ненашев, желтый) 5.26, 5.27, 6.10, 6.12, 6,13, 7.1;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        История Укр.
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Опрос(устный). Лекция №1, §1-3
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        История Украины; Лекция №1, §1-3, Вопросы с. 114;
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Презентация 3, опрос по лекции №1, §1-3; Конспект на сайте;
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide__content-col last">
+                                <div class="slide__col-text">
+                                    <div class="slide__col-title">
+                                        Агнгл. язык
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        Замена, рассказывали диалог. S.B. 6D-6E
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Д/з
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        6E; S.B.p. 56; W.B.p. 48; Составить диалог, записать в challenge
+                                    </div>
+                                </div>
+                                <div class="slide__col-text slide__col-bordered">
+                                    <div class="slide__col-title">
+                                        Прошлый урок
+                                    </div>
+                                    <div class="slide__col-subtitle">
+                                        6E; S.b. p. 56-57; Составили и рассказали диалог,
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__side-slide content__side-slide--enclose---help">
+                  <h2 class="content__title">Приложения к 28/09</h2>
+                </div>
+                <!-- <div class="content__side-slide content__side-slide--enclose---help">
+                  <h3 class="content__subtitle">Приложения к этому дню отсутствуют</h3>
+                </div> -->
+                <div class="content__side-slide content__side-slide--enclose">
+                  <h2>Самостоятельная по Истории Украины</h2>
+        					<span class="icon-keyboard_arrow_right"></span>
+        					<div class="clearfix content__enclose-trigger"></div>
+        					<div class="enclose__block-content active">
+        						<h3>Содержание самостоятельной: </h3>
+        						<ul>
+        							<li>3 <b>Варианта</b>;</li>
+        							<li>3 <b>Открытых</b> вопроса;</li>
+        							<li>Тема: <b>Великая Французская Революция</b>;</li>
+        							<li><b>Войдите для получения большей информации;</b></li>
+        						</ul>
+        					</div>
+                </div>
+                <div class="content__side-slide content__side-slide--enclose">
+                  <h2>Самостоятельная по Истории Украины</h2>
+        					<span class="icon-keyboard_arrow_right"></span>
+        					<div class="clearfix content__enclose-trigger"></div>
+        					<div class="enclose__block-content">
+                    <h3>Содержание самостоятельной: </h3>
+        						<ul>
+        							<li>3 <b>Варианта</b>;</li>
+        							<li>3 <b>Открытых</b> вопроса;</li>
+        							<li>Тема: <b>Великая Французская Революция</b>;</li>
+        							<li><b>Войдите для получения большей информации;</b></li>
+        						</ul>
+        					</div>
+                </div>
+                <div class="content__side-slide content__side-slide--enclose">
+                  <h2>Самостоятельная по Истории Украины</h2>
+        					<span class="icon-keyboard_arrow_right"></span>
+        					<div class="clearfix content__enclose-trigger"></div>
+        					<div class="enclose__block-content">
+                    <h3>Содержание самостоятельной: </h3>
+        						<ul>
+        							<li>3 <b>Варианта</b>;</li>
+        							<li>3 <b>Открытых</b> вопроса;</li>
+        							<li>Тема: <b>Великая Французская Революция</b>;</li>
+        							<li><b>Войдите для получения большей информации;</b></li>
+        						</ul>
+        					</div>
+                </div>
+            </div>
+
+            <div class="content__side-right">
+                <div class="content__side-part">
+                    <div class="content__part-top">
+                        Свежая информация
+                    </div>
+                    <ul>
+                        <li>География</li>
+                        <li>Информатика IT</li>
+                        <li>Программирование</li>
+                        <li>Физика</li>
+                        <li>Алгебра</li>
+                    </ul>
+                </div>
+                <div class="content__side-part">
+                    <div class="content__part-top">
+                        Фото конспектов
+                    </div>
+                    <iframe src='../inwidget/index.php?toolbar=false' scrolling='yes' class="content__side--photos"
+                            frameborder='no' style='height:352px;border:none;'></iframe>
+                </div>
+                <div class="content__side-part">
+                    <div class="content__part-top">
+                        Ваши предложения
+                    </div>
+                    <ul>
+                        <li>Надо график дежурств</li>
+                        <li>Потерял книгу по химии. Петров Сидор</li>
+                        <li>В д/з по физике на 29.11 ошибка</li>
+                        <li>Надо люди для проекта по химии. Петров Сидор</li>
+                    </ul>
+                </div>
+                <div class="content__side-part content__side-questions">
+                    <div class="content__part-top">
+                        Опрос
+                    </div>
+                    <ul>
+                        <li>Сколько времени вы проводите на сайте за день?</li>
+                        <li>
+                            <input type="radio" id="q1" name="questionResult"/>
+                            <label for="q1">Не более минуты</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q2" name="questionResult"/>
+                            <label for="q2">От 2 до 5 минут</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="q3" name="questionResult"/>
+                            <label for="q3">Не более 8 минут</label>
+                        </li>
+                        <li class="none-border">
+                            <input type="radio" id="q4" name="questionResult"/>
+                            <label for="q4">Могу долго находиться</label>
+                        </li>
+                    </ul>
+                    <button class="button-main">Ответить</button>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            Copyright © 2018 by Alexey Sarakuz.
+        </div>
+    </div>
+</footer>
+
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="../js/tabs-enclose.js"></script>
+</body>
+</html>

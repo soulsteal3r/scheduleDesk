@@ -1,7 +1,7 @@
-var content = document.getElementsByClassName("login__block-content");
-var block = document.getElementsByClassName("login__block-q");
-var trigger = document.getElementsByClassName("login-q-trigger");
-console.log(trigger);
+var content = document.getElementsByClassName("enclose__block-content");
+var block = document.getElementsByClassName("content__side-slide--enclose");
+var trigger = document.getElementsByClassName("content__enclose-trigger");
+
 for(var p = 0; p < trigger.length; p++){
   (function(p){
     trigger[p].onclick = function(){

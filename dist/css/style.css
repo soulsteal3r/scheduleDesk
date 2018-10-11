@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?h3sf64');
-  src:  url('../fonts/icomoon/icomoon.eot?h3sf64#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?h3sf64') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?h3sf64') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?h3sf64#icomoon') format('svg');
+  src:  url('../fonts/icomoon-f/icomoon.eot?h3sf64');
+  src:  url('../fonts/icomoon-f/icomoon.eot?h3sf64#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-f/icomoon.ttf?h3sf64') format('truetype'),
+    url('../fonts/icomoon-f/icomoon.woff?h3sf64') format('woff'),
+    url('../fonts/icomoon-f/icomoon.svg?h3sf64#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-check:before {
+  content: "\e904";
+}
 .icon-notifications_active:before {
   content: "\e902";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e900";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e901";
+}
+.icon-checkmark:before {
+  content: "\e903";
 }
 .icon-keyboard_arrow_right:before {
   content: "\e900";
@@ -36,6 +49,7 @@
 .icon-calendar:before {
   content: "\e953";
 }
+
 .slide__trigger-left, .slide__trigger-right{
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;

@@ -1,7 +1,7 @@
 var content = document.getElementsByClassName("login__block-content");
 var block = document.getElementsByClassName("login__block-q");
-var trigger = document.getElementsByClassName("icon-keyboard_arrow_right");
-
+var trigger = document.getElementsByClassName("login-q-trigger");
+console.log(trigger);
 for(var p = 0; p < trigger.length; p++){
   (function(p){
     trigger[p].onclick = function(){
